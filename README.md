@@ -1,4 +1,4 @@
-\# q-estimation MATLAB Functions
+# q-estimation MATLAB Functions
 
 
 
