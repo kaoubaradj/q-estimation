@@ -4,7 +4,7 @@
 % estimation, compares them with theoretical q-moments, and returns the ratios.
 %
 % USAGE:
-%   [mom_res, mom_theo, ratios] = compare_q_moments(samples, q, max_intervals, teta)
+%   [mom_res, mom_theo, ratios] = compare_q_moments(samples, q, max_intervals, theta)
 %
 % INPUTS:
 %   samples       - vector of observed data points
@@ -20,7 +20,7 @@
 % DEPENDENCIES:
 %   Requires the function q_number(teta, q) to be defined in your path.
 
-function [mom_res, mom_theo, ratios] = compare_q_moments(samples, q, max_intervals, teta)
+function [mom_res, mom_theo, ratios] = compare_q_moments(samples, q, max_intervals, theta)
 
     % Upper bounds sequence
     Upper = [];
@@ -64,9 +64,9 @@ function [mom_res, mom_theo, ratios] = compare_q_moments(samples, q, max_interva
     u3 = @(teta) q_number(2, q) .* q_number(3, q) .* (q_number(teta, q) + q_number(4, q)) ./ ...
                  (q_number(teta, q).^3 .* (q_number(teta, q) + 1));
 
-    mom1_theo = u1(teta);
-    mom2_theo = u2(teta);
-    mom3_theo = u3(teta);
+    mom1_theo = u1(theta);
+    mom2_theo = u2(theta);
+    mom3_theo = u3(theta);
 
     mom_theo = [mom1_theo, mom2_theo, mom3_theo];
 
