@@ -2,7 +2,7 @@
 
 
 
-This repository contains MATLAB functions developed as part of my research work on \*\*q-estimation methods\*\* for distributions, including the Lindley q-distribution.
+This repository contains MATLAB functions developed as part of my research work on \*\*q-estimation methods\*\* for q-distributions, including the Lindley q-distribution.
 
 
 
@@ -10,11 +10,11 @@ This repository contains MATLAB functions developed as part of my research work 
 
 
 
-\## 📌 Functions
+## 📌 Functions
 
 
 
-\- \*\*estimate\_theta\_qLindley(sample, max\_intervals, q)\*\*  
+*\*estimate\_theta\_qLindley(sample, max\_intervals, q)\*\*  
 
 &nbsp; Estimates parameter θ of the Lindley q-distribution.
 
