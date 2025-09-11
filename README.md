@@ -8,7 +8,7 @@ Estimates the parameter **θ** of the Lindley q-distribution.
 ### `main_lindley_q_experiment()`
 Runs the full experiment:
 - Estimates scaling constant **c**
-- Computes empirical q-moments
+- Computes novel empirical q-moments
 - Compares results with theoretical values
 
 ---
