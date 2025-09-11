@@ -23,6 +23,16 @@ Generates random samples from the Lindley q-distribution using **acceptance-reje
 
 ---
 
+**Parameters:**
+- **q_theta** → q-analog of the real number θ  
+- **len** → range of the distribution  
+  - For first-kind continuous q-distributions: finite  
+  - For second-kind: infinite (but can be truncated by cutting off the negligible tail)  
+- **height** → maximum value of the PDF over its range  
+- **num_samples** → sample size to generate  
+
+---
+
 ### Helper Functions
 - `q_number`
 - `q_expo2`
