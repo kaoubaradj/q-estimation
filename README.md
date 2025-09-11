@@ -34,6 +34,12 @@ This function computes empirical q-moments from sample data, compares them with 
 
 ---
 
+### `plot_histogram_lindley_q(samples, q, max_intervals, theta)`
+
+This function plots a histogram of the given sample data alongside the theoretical q-Lindley probability density function.
+
+---
+
 **Parameters:**
 - **q_theta** → q-analog of the real number θ  
 - **len** → range of the distribution  
