@@ -23,6 +23,12 @@ Generates random samples from the Lindley q-distribution using **acceptance-reje
 
 ---
 
+### `plot_q_intervals(samples, q, max_intervals)`
+Computes q-based intervals, calculates the percentage of data points in each interval, and plots a labeled histogram.  This function is primarily useful for determining an appropriate value for max_intervals.
+
+
+---
+
 **Parameters:**
 - **q_theta** → q-analog of the real number θ  
 - **len** → range of the distribution  
