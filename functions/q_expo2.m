@@ -1,14 +1,23 @@
-% q-exponential via series expansion
-function sum_val = q_expo2(x, q)
-    sum_val = 0;
-    tol = 1e-12;
-    max_terms = 200;  % reduced for efficiency
+function [sum,term]=q_expo2(x,q)
+% Define the value of x for the Taylor expansion
+% Initialize the sum
+sum = 0;
 
-    for n = 0:max_terms
-        term = x.^n / q_factorial(n, q); % need q_factorial defined
-        sum_val = sum_val + term;
-        if abs(term) < tol
-            break;
-        end
+% Set the convergence criterion (e.g., tolerance value)
+eps = 1e-100; % Adjust as needed
+
+% Set the maximum number of terms
+max_terms = 5000;
+
+% Compute the Taylor series expansion of e^x
+for n = 0:max_terms
+    term =x.^n / q_factorial(n,n,q);
+    sum = sum + term;
+    
+    % Check convergence criterion
+    if abs(term) < eps
+        break; % Stop if the term is too small
     end
+end
+
 end
