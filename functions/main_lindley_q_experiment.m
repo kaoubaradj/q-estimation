@@ -37,7 +37,7 @@ function main_lindley_q_experiment()
     % -----------------------
     % Stage 2: Empirical q-mean
     % -----------------------
-    samples = sample_lindley(theta, len, height, numSamples, q);
+    samples = sample_lindley_q(theta, len, height, numSamples, q);
 
     % Build grid Upper
     b     = max(samples);
